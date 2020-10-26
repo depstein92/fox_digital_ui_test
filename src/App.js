@@ -1,10 +1,16 @@
-import logo from './logo.svg';
 import './App.scss';
+import {
+  CheckoutComponent,
+  ProfileComponent,
+  PriceComponent
+} from './components/index';
 
 function App() {
   return (
     <div className="App">
-      I am klandjal;sjdf;l
+      <ProfileComponent />
+      <PriceComponent />
+      <CheckoutComponent />
     </div>
   );
 }
