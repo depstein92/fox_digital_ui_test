@@ -8,9 +8,11 @@ import {
 function App() {
   return (
     <div className="App">
-      <ProfileComponent />
-      <PriceComponent />
-      <CheckoutComponent />
+      <div className="layout-wrapper">
+        <ProfileComponent />
+        <PriceComponent />
+        <CheckoutComponent />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,58 @@
+@import 'variables';
+
+.layout-wrapper{
+  background-color: $white-blue;
+  margin: 0 auto;
+  & > div{
+    background-color: white;
+  }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .layout-wrapper{
+        display: grid;
+        grid-template-columns: 2 span;
+        grid-template-rows: 2 span;
+        grid-auto-flow: row;
+        grid-gap: 20px;
+        padding: 20px;
+    }
+     
+    .price{
+       padding: 45px 0;
+    }
+
+    .checkout{
+        grid-column: 1 / span 2;
+        margin: 0 auto;
+    }
+       
+}
+
+@media screen and (min-width: 1200px) {
+  .layout-wrapper{
+    display: grid;
+    grid-template-columns: 2 span;
+    grid-template-rows: 2 span;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .price{
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .profile{
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .checkout{
+    margin: 0 auto;
+    grid-row: 1 / span 2;
+    grid-column: auto;
+  }
+}
