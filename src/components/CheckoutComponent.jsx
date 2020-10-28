@@ -1,4 +1,8 @@
 import React from 'react';
+import SmallBusinessIcon from '../assets/business_selection_icon.png';
+import VisaLogo from '../assets/visa_credit_card_logo.png';
+import AmericanExpressLogo from '../assets/american_express.png';
+import ArrowIcon from '../assets/arrow.jpg';
 
 const CheckoutComponent = () => (
     <div className="checkout">
@@ -11,28 +15,28 @@ const CheckoutComponent = () => (
         </div>
         <div className="checkout__small-business-selection-container">
           <div className="checkout__small-business-selection">
-              <img className="checkout__small-business-selection-icon" alt="JPG" />
-              <div className="small-business-selection-description-container">
+              <img src={SmallBusinessIcon} className="checkout__small-business-selection-icon" alt="JPG" />
+              <div className="checkout__small-business-selection-description-container">
                   <div className="checkout__small-business-selection-primary-title">
                   Small Business
                   </div>
                   <div className="checkout__small-business-selection-primary-sub-title">
-                  Change Plan
+                  CHANGE PLAN
                   </div>
               </div>
           </div>
           <div className="checkout__small-business-selection-price-container">
-            <div className="checkout__small-business-selection-price">$8,350</div>
+            <div className="checkout__small-business-selection-money-symbol">$</div>
+            <div className="checkout__small-business-selection-price">8,350</div>
             <div className="checkout__small-business-selection-price-year">/year</div>
           </div>
         </div>
 
         <div className="checkout__payment-details">
-          <div className="checkout__payment-details-title">Payment Details</div>
-
+          <div className="checkout__payment-details-title">Payment details</div>
             <div className="checkout__credit-card-payment-details--1">
               <div className="checkout__credit-card-payment-details__details">
-                <img className="checkout__credit-card-payment-details__logo" alt="JPG" />
+                <img src={VisaLogo} className="checkout__credit-card-payment-details__logo" alt="JPG" />
                 <div className="checkout__credit-card-payment-details__title-number">
                   <h1>Credit card</h1>
                   <div className="checkout__credit-card-payment-details__number">
@@ -45,7 +49,7 @@ const CheckoutComponent = () => (
 
             <div className="checkout__credit-card-payment-details--2">
               <div className="checkout__credit-card-payment-details__details">
-                <img alt="JPG" className="checkout__credit-card-payment-details__logo" />
+                <img src={AmericanExpressLogo} alt="JPG" className="checkout__credit-card-payment-details__logo" />
                 <div className="checkout__credit-card-payment-details__title-number">
                   <h1>Credit card</h1>
                   <div className="checkout__credit-card-payment-details__number">
@@ -57,9 +61,9 @@ const CheckoutComponent = () => (
             </div>
             <div className="checkout__add-payment-method-container">
               <div className="checkout__add-payment-method-container-title">ADD PAYMENT METHOD</div>
-              <input placeholder="Email address" type="text"/>
+              <input className="checkout__email-address-input" placeholder="Email address" type="text"/>
               <button className="checkout__proceed-to-payment-button">
-               <div>Proceed to payment</div>  
+               <div>Proceed to payment</div> <img src={ArrowIcon} alt=""/>  
               </button>
             </div>
         </div>

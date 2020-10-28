@@ -3,8 +3,9 @@
 .checkout{
     padding: 30px; /*once over tablet-landscape (900px) will change to 60px*/
     height: 700px;
-    border: 1px solid red;
+    border-radius: 10px;
     max-width: 775px;
+    @include component-box-shadow;
     
     /*
       Upgrade your plan and 
@@ -14,18 +15,23 @@
         height: 150px;
         display: flex;
         flex-direction: column;
-        border: 1px solid black;
+        // border: 1px solid black;
         width: 100%;
     }
 
     &__primary-title{
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
+        transform: translate(10px, 20px);
     }
 
     &__secondary-paragraph{
         margin-top: 30px;
-        border: 1px solid black;
+        // border: 1px solid black;
+        height: 80%;
+        padding: 10px 12% 0 10px;
+        font-size: 22px;
+        color: $brown-grey;
     }
 
     /*
@@ -37,30 +43,82 @@
     */
 
     &__small-business-selection-container{
-        height: 150px;
-        border: 1px solid black;
+        height: 130px;
+        border: 2px solid $purple-blue;
         display: flex;
         flex-direction: column;
+        margin: 10px 0 0 10px;
+        width: 630px;
+        border-radius: 5px;
+        background-color: rgba(54, 100, 237, .07);
     }
+
+    /* Left side of button*/
 
     &__small-business-selection{
         width: 100%;
         height: 49%;
-        border: 1px solid red;
+        // border: 1px solid red;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
     }
 
+    &__small-business-selection-description-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &__small-business-selection-primary-title{
+        font-size: 24px;
+        margin-bottom: 12px;
+        // font-weight: bold;
+    }
+
+    &__small-business-selection-primary-sub-title{
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: $purple-blue;
+        font-weight: bold;
+    }
+
+    &__small-business-selection-icon{
+        border-radius: 10px;
+        border: 1px solid blue;
+        width: 85px;
+        height: 85px;
+    }
+
+    /* Right side of button*/
+
     &__small-business-selection-price-container{
         width: 100%;
         height: 49%;
-        border: 1px solid blue;
+        // border: 1px solid blue;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+
+    &__small-business-selection-price{
+       font-size: 50px;
+    }
+
+    &__small-business-selection-price-year{
+        font-size: 25px;
+        transform: translate(10px, 10px);
+        color: $brown-grey;
+    }
+
+    &__small-business-selection-money-symbol{
+        font-size: 25px;
+        transform: translate(-5px, -8px);
+        color: $brown-grey;
     }
 
     &__small-business-selection-icon{
@@ -69,49 +127,87 @@
         border: 1px solid black;
     }
     
+
+
     /*
        Payment Details 
     */
     
     &__payment-details{
-        margin-top: 25px; /*This will change as the screen gets larger*/
-        border: 1px solid black;
+        margin-top: 45px; /*This will change as the screen gets larger*/
+        // border: 1px solid black;
     }
 
     &__payment-details-title{
-       font-size: 18px;
+       font-size: 24px;
        font-weight: bold;
+       margin-left: 8px;
     }
 
     &__credit-card-payment-details{
-        
         &--1{
-            border: 1px solid rgb(177, 14, 14);
+            // border: 1px solid rgb(177, 14, 14);
             height: 60px;
             display: flex;
             flex-direction: row;
             align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 8px;
+            position: relative;
             input{
-                width: 90px;
-                height: 25px;
+                width: 85px;
+                height: 40px;
+                position: absolute;
+                right: 10px;
+                font-size: 16px;
+                text-align: center;
+                border-radius: 5px;
+                border: 2px solid $white-blue;
+                &::placeholder{
+                    color: $brown-grey;
+                    transform: translate(-13px, 2px);
+                    letter-spacing: 1px;
+                }
             }
         }
         &--2{
-            border: 1px solid rgb(36, 122, 241);
+            // border: 1px solid rgb(36, 122, 241);
             display: flex;
             flex-direction: row;
             align-items: center;
             height: 60px;
+            position: relative;
+            margin-left: 8px;
             input{
-                width: 90px;
-                height: 25px;
+                width: 85px;
+                height: 40px;
+                position: absolute;
+                right: 10px;
+                font-size: 16px;
+                text-align: center;
+                border-radius: 5px;
+                border: 2px solid $white-blue;
+                &::placeholder{
+                    color: $brown-grey;
+                    transform: translate(-13px, 2px);
+                    letter-spacing: 1px;
+                }
             }
         }
+         
+        $margin-between-logo-and-number: 16px;
+        $card-title-font-size: 20px;
 
         &__title-number{
-            font-size: 15px;
+            font-size: $card-title-font-size;
+            margin-left: $margin-between-logo-and-number;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
             h1{
                 font-weight: bold;
+
             }
             div{
                 white-space: nowrap;
@@ -120,7 +216,7 @@
         }
         
         &__details{
-            border: 1px solid red;
+            // border: 1px solid red;
             display: flex;
             width: 64%;
             margin-right: 15px;
@@ -136,33 +232,83 @@
     }
 
     /* Add payment method container */
+
+
     &__add-payment-method-container{
         margin-top: 40px; /*This will change as VH changes*/
         height: 160px;
-        border: 1px solid black;
-        input{
-            height: 30px; /* This will change after 600px*/
-            width: 100%;
-            margin: 30px auto;
-        }
-
-        button{
-            height: 50px;
-            width: 100%;
-            background-color: $purple-blue;
-            color: white;
-            border: 1px solid $purple-blue;
-
-        }
     }
 
     &__add-payment-method-container-title{
-        font-size: 15px;
+        font-size: 20px;
+        color: $purple-blue;
+        margin-left: 8px;
+    }
+
+    &__email-address-input{
+        margin-top: 55px;
+        width: 97%;
+        height: 60px;
+        margin-bottom: 45px;
+        border-radius: 5px;
+        border: 2px solid $white-blue;
+        margin-left: 8px;
+        &::placeholder{
+            font-size: 20px;
+            transform: translateX(25px);
+            color: $dark-grey;
+        }
+
+    }
+
+    &__proceed-to-payment-button{
+        height: 100px;
+        width: 96%;
+        background-color: $purple-blue;
+        color: white;
+        border: 1px solid $purple-blue;
+        margin-left: 8px;
+        font-size: 25px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        img{
+            margin-left: 20px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
     }
 
 
 
+  @media screen and (min-width: 1200px) {
+      height: 890px;
+      transform: translateX(10px); /*Temporary*/
+      padding: 30px 45px;
+      width: 650px;
 
+      &__small-business-selection-container{
+          flex-direction: row;
+      }
+
+      &__small-business-selection{
+        height: 100%;
+      }
+        
+      &__small-business-selection-price-container{
+        height: 100%;
+      }
+      
+      &__credit-card-payment-details{
+          &__logo{
+              display: block;
+          }
+      }
+     
+
+
+  }
 
 
 

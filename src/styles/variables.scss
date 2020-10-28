@@ -6,4 +6,9 @@ $dark-grey: rgb(180, 180, 183);
 $brown-grey: rgb(133, 131, 134);
 $robin-egg-blue: rgb(86, 184, 252);
 
+@mixin component-box-shadow{
+    -webkit-box-shadow: 1px 33px 47px -30px rgba(0,0,0,0.41); 
+    box-shadow: 1px 33px 47px -30px rgba(0,0,0,0.41);
+}
+
 
