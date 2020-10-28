@@ -2,10 +2,16 @@
 
 .checkout{
     padding: 30px; /*once over tablet-landscape (900px) will change to 60px*/
-    height: 700px;
+    // height: 700px;
     border-radius: 10px;
-    max-width: 775px;
+    // max-width: 775px;
     @include component-box-shadow;
+    
+    /*Code from 1200px and higher*/
+    height: 890px;
+    // transform: translateX(10px); /*Temporary*/
+    padding: 30px 45px;
+    width: 650px;
     
     /*
       Upgrade your plan and 
@@ -46,7 +52,7 @@
         height: 130px;
         border: 2px solid $purple-blue;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin: 10px 0 0 10px;
         width: 630px;
         border-radius: 5px;
@@ -57,7 +63,7 @@
 
     &__small-business-selection{
         width: 100%;
-        height: 49%;
+        height: 100%;
         // border: 1px solid red;
         display: flex;
         flex-direction: row;
@@ -97,7 +103,7 @@
 
     &__small-business-selection-price-container{
         width: 100%;
-        height: 49%;
+        height: 100%;
         // border: 1px solid blue;
         display: flex;
         flex-direction: row;

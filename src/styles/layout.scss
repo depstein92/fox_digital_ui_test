@@ -3,11 +3,11 @@
 .layout-wrapper{
   background-color: $white-blue;
   margin: 0 auto;
+  max-width: 1400px;
   & > div{
     background-color: white;
   }
 }
-
 
 
 @media screen and (min-width: 800px) {

@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 $border-radius-for-profile: 20px;
 
 .profile{
@@ -26,7 +25,7 @@ $border-radius-for-profile: 20px;
         border-top-right-radius: $border-radius-for-profile;
         img{
             height: 110px;
-            border: 8px solid white;
+            border: 5px solid white;
             border-radius: 80px;
             transform: translateY(40px);
         }
