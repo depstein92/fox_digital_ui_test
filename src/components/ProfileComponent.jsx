@@ -4,8 +4,6 @@ import DefaultProfileImage from '../assets/default-profile-2.png';
 
 const ProfileComponent = () => (
     <div className="profile">
-      {// <img src={ProfileImage} className="profile__profile-image"></img>
-      }
       <div className="profile__profile-header-container">
         <img src={DefaultProfileImage} alt="Default Profile Image"/>
       </div>
