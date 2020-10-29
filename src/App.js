@@ -11,8 +11,7 @@ function App() {
       <div className="layout-wrapper">
       <ProfileComponent />
       <PriceComponent />
-        {// <CheckoutComponent />
-        }
+      <CheckoutComponent />
       </div>
     </div>
   );

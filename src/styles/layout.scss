@@ -12,7 +12,6 @@
 
 @media screen and (min-width: 320px) and (max-width: 600px){
     
-
     @mixin mobile-base-style{
         max-width: none;
         border-radius: 0;
@@ -28,19 +27,22 @@
     }
     
     .profile{
-        width: 100%;
+        width: 85%;
         @include mobile-base-style;
     }
     
     .price{
         width: 80%;
         padding-left: 5px;
+        height: 300px;
         padding-top: 0;
         @include mobile-base-style;
-        margin: 30px auto;
+        margin: 15px auto;
 
         & > div{
-            margin-bottom: 25px;
+            &:nth-child(2){
+                align-items: center;
+            }
             * {
                 padding-left: 0;
                 text-align: center;
@@ -49,59 +51,124 @@
 
         &__button-container{
             width: 100%;
+            button{
+                height: 55%;
+                img{
+                    margin-right: 5px;
+                }
+            }
+            
         }
     }
       
     .checkout{
         width: 80%;
         @include mobile-base-style;
+        padding-left: 20px;
+        margin: 25px auto;
         & > div{
             text-align: center;
             width: 100%;
-            * {
-                padding-right: 0;
-                padding-left: 0;
-            }
+        }
+        
+        &__primary-title{
+            font-size: 24px;
+        }
+
+        &__secondary-paragraph{
+            padding: 10px 0 0 30px;
+            font-size: 18px;
+            line-height: 25px;
+        }
+        &__small-business-selection-price{
+            font-size: 30px;
+        }
+        &__small-business-selection-price-year{
+            font-size: 20px;
+            transform: translate(5px, 5px);
         }
         &__small-business-selection-container{
             margin-top: 50px;
             flex-direction: column;
+            width: 105%;
+        }
+        &__small-business-selection-primary-title{
+            font-size: 16px;
+        }
+        &__small-business-selection-primary-sub-title{
+            font-size: 14px;
         }
         &__credit-card-payment-details{
-            
+            &__details{
+                width: auto;
+            }
             &--1{
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: space-evenly;
+                flex-direction: row;
                 width: 100%;
-                max-width: 350px;
                 margin: 30px auto;
+                height: 60px;
                 & > div *{
                     margin-left: 0;
+                    font-size: 18px;
+                    margin-left: 20px;
                 }
                 input{
-                    right: -20px;
+                    position: relative;
+                    right: 0;
+                    height: 30px;
+                    width: 60px;
+
+                    &::placeholder{
+                        font-size: 14px;
+                    }
                 }
             }
             &--2{
                 align-items: center;
-                justify-content: flex-start;
+                justify-content: space-evenly;
+                flex-direction: row;
                 width: 100%;
-                max-width: 350px;
                 margin: 30px auto;
+                height: 60px;
                 & > div *{
                     margin-left: 0;
+                    font-size: 18px;
+                    margin-left: 20px;
                 }
                 input{
-                    right: -20px;
+                    position: relative;
+                    right: 0;
+                    height: 30px;
+                    width: 60px;
+                    &::placeholder{
+                        font-size: 14px;
+                    }
                 }
             }
+
+
         }
 
         &__proceed-to-payment-button{
             align-items: center;
-            img{
-                margin-right: 20px;
-            }
+            height: 80px;
+            font-size: 18px;
+            white-space: nowrap;
+            padding: 0 20px 0 20px;
+            // img{
+            //     margin-right: 20px;
+            // }
+        }
+
+        &__email-address-input{
+            margin: 40px 0 40px 0;
+            height: 40px;
+        }
+
+        &__add-payment-method-container-title{
+            font-size: 18px;
         }
       }  
 }
