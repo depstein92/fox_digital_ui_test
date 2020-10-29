@@ -91,7 +91,7 @@
         &__small-business-selection-container{
             margin-top: 50px;
             flex-direction: column;
-            width: 105%;
+            width: 95%;
         }
         &__small-business-selection-primary-title{
             font-size: 16px;
@@ -99,9 +99,11 @@
         &__small-business-selection-primary-sub-title{
             font-size: 14px;
         }
+
         &__credit-card-payment-details{
             &__details{
                 width: auto;
+                margin-top: 70px;
             }
             &--1{
                 align-items: center;
