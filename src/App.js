@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <div className="layout-wrapper">
-        <ProfileComponent />
+      <ProfileComponent />
         <PriceComponent />
         <CheckoutComponent />
       </div>

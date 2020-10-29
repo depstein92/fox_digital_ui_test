@@ -2,16 +2,13 @@
 
 .checkout{
     padding: 30px; /*once over tablet-landscape (900px) will change to 60px*/
-    // height: 700px;
     border-radius: 10px;
-    // max-width: 775px;
     @include component-box-shadow;
     
-    /*Code from 1200px and higher*/
     height: 890px;
-    // transform: translateX(10px); /*Temporary*/
     padding: 30px 45px;
     width: 650px;
+    margin: 0 auto;
     
     /*
       Upgrade your plan and 
@@ -27,7 +24,7 @@
 
     &__primary-title{
         font-size: 30px;
-        font-weight: bold;
+        // font-weight: bold;
         transform: translate(10px, 20px);
     }
 
@@ -54,7 +51,7 @@
         display: flex;
         flex-direction: row;
         margin: 10px 0 0 10px;
-        width: 630px;
+        width: 87%;
         border-radius: 5px;
         background-color: rgba(54, 100, 237, .07);
     }
@@ -97,6 +94,7 @@
         border: 1px solid blue;
         width: 85px;
         height: 85px;
+        display: none;
     }
 
     /* Right side of button*/
@@ -127,11 +125,11 @@
         color: $brown-grey;
     }
 
-    &__small-business-selection-icon{
-        // width: 90px;
-        // height: 90px;
-        border: 1px solid black;
-    }
+    // &__small-business-selection-icon{
+    //     // width: 90px;
+    //     // height: 90px;
+    //     border: 1px solid black;
+    // }
     
 
 
