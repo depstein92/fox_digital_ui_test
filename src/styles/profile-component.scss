@@ -10,6 +10,7 @@ $border-radius-for-profile: 20px;
     max-width: 500px;
     border-radius: $border-radius-for-profile;
     border: 5px solid white;
+    font-family: $primary-font-family;
     @include component-box-shadow;
 
     &__profile-header-container{

@@ -9,6 +9,7 @@
     padding: 30px 45px;
     width: 650px;
     margin: 0 auto;
+    font-family: $primary-font-family;
     
     /*
       Upgrade your plan and 
@@ -24,7 +25,7 @@
 
     &__primary-title{
         font-size: 30px;
-        // font-weight: bold;
+        font-weight: bold;
         transform: translate(10px, 20px);
     }
 
@@ -33,8 +34,9 @@
         // border: 1px solid black;
         height: 80%;
         padding: 10px 12% 0 10px;
-        font-size: 22px;
+        font-size: 20px;
         color: $brown-grey;
+        line-height: 28px;
     }
 
     /*
@@ -79,7 +81,7 @@
     &__small-business-selection-primary-title{
         font-size: 24px;
         margin-bottom: 12px;
-        // font-weight: bold;
+        font-weight: bold;
     }
 
     &__small-business-selection-primary-sub-title{
@@ -124,14 +126,6 @@
         transform: translate(-5px, -8px);
         color: $brown-grey;
     }
-
-    // &__small-business-selection-icon{
-    //     // width: 90px;
-    //     // height: 90px;
-    //     border: 1px solid black;
-    // }
-    
-
 
     /*
        Payment Details 
@@ -247,6 +241,7 @@
         font-size: 20px;
         color: $purple-blue;
         margin-left: 8px;
+        font-weight: bold;
     }
 
     &__email-address-input{
@@ -286,33 +281,33 @@
 
 
 
-  @media screen and (min-width: 1200px) {
-      height: 890px;
-      transform: translateX(10px); /*Temporary*/
-      padding: 30px 45px;
-      width: 650px;
+//   @media screen and (min-width: 1200px) {
+//       height: 890px;
+//       transform: translateX(10px); /*Temporary*/
+//       padding: 30px 45px;
+//       width: 650px;
 
-      &__small-business-selection-container{
-          flex-direction: row;
-      }
+//       &__small-business-selection-container{
+//           flex-direction: row;
+//       }
 
-      &__small-business-selection{
-        height: 100%;
-      }
+//       &__small-business-selection{
+//         height: 100%;
+//       }
         
-      &__small-business-selection-price-container{
-        height: 100%;
-      }
+//       &__small-business-selection-price-container{
+//         height: 100%;
+//       }
       
-      &__credit-card-payment-details{
-          &__logo{
-              display: block;
-          }
-      }
+//       &__credit-card-payment-details{
+//           &__logo{
+//               display: block;
+//           }
+//       }
      
 
 
-  }
+//   }
 
 
 

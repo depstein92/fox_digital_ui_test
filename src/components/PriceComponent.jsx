@@ -3,7 +3,7 @@ import PaperIcon from '../assets/paper_icon.png';
 import ClockIcon from '../assets/clock_icon.png';
 
 const PriceComponent = () => {
-  const [rangeValue, setRangeValue] = useState(20);
+  const [rangeValue, setRangeValue] = useState(180);
   const handleChange = e => setRangeValue(e.target.value);
   const [isButtonSelected, setIsButtonSelected] = useState({
       fixedSelected: false,

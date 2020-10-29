@@ -9,7 +9,7 @@ const CheckoutComponent = () => (
        <div className="checkout__description-container">
           <div className="checkout__primary-title">Upgrade your plan</div>
           <span className="checkout__secondary-paragraph">
-          Please make sure the payment to start enjoying all the features
+          Please make the payment to start enjoying all the features
           of our premium plan as soon as possible.
           </span>
         </div>

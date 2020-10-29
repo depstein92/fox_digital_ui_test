@@ -12,6 +12,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 600px){
     
+
     @mixin mobile-base-style{
         max-width: none;
         margin: 0 auto;
@@ -24,6 +25,7 @@
 
     .layout-wrapper{
         padding-top: 0;
+        background-color: white;
     }
     
     .profile{
@@ -112,9 +114,18 @@
   .checkout{
     width: 70%;
     max-width: none;
-    // &__small-business-selection-container{
-    //     flex-direction: column;
-    // }
+
+    
+
+    &__small-business-selection-container{
+        width: 100%;
+    }
+
+    &__credit-card-payment-details{
+        &__logo{
+            display: block;
+        }
+    }
   }
   
 }
@@ -133,7 +144,7 @@
      
     .price{
        padding: 45px 0;
-       max-width: 475px;
+       width: 475px;
     }
     .profile{
         width: 465px;
@@ -143,8 +154,15 @@
         grid-column: 1 / span 2;
         margin: 0 auto;
         width: 650px;
+
+        &__small-business-selection-icon{
+            display: flex;
+        }
         &__small-business-selection-container{
             flex-direction: row;
+        }
+        &__small-business-selection-container{
+            width: 650px;
         }
     }
 }
