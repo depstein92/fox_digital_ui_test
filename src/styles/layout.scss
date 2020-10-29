@@ -65,6 +65,7 @@
         width: 80%;
         @include mobile-base-style;
         padding-left: 20px;
+        height: 800px;
         margin: 25px auto;
         & > div{
             text-align: center;
@@ -108,7 +109,7 @@
                 flex-direction: row;
                 width: 100%;
                 margin: 30px auto;
-                height: 60px;
+                height: 50px;
                 & > div *{
                     margin-left: 0;
                     font-size: 18px;
@@ -122,6 +123,7 @@
 
                     &::placeholder{
                         font-size: 14px;
+                        transform: translateX(-2px);
                     }
                 }
             }
@@ -131,7 +133,7 @@
                 flex-direction: row;
                 width: 100%;
                 margin: 30px auto;
-                height: 60px;
+                height: 50px;
                 & > div *{
                     margin-left: 0;
                     font-size: 18px;
@@ -144,6 +146,7 @@
                     width: 60px;
                     &::placeholder{
                         font-size: 14px;
+                        transform: translateX(-2px);
                     }
                 }
             }
@@ -153,13 +156,10 @@
 
         &__proceed-to-payment-button{
             align-items: center;
-            height: 80px;
+            height: 60px;
             font-size: 18px;
             white-space: nowrap;
             padding: 0 20px 0 20px;
-            // img{
-            //     margin-right: 20px;
-            // }
         }
 
         &__email-address-input{
