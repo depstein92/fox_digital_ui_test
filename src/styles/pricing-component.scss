@@ -20,13 +20,14 @@
     }
     
     &__set-up-your-pricing-title{
-        font-size: 30px;
+        font-size: 24px;
         font-weight: bold;
     }
 
     &__set-up-your-pricing-sub-title{
         margin-top: 15px;
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 24px;
         color: $brown-grey;
     }
     
@@ -43,7 +44,7 @@
           height: 70%;
           display: flex;
           flex-direction: row;
-          justify-content: space-evenly;
+          justify-content: center;
           border-radius: 10px;
           font-size: 18px;
           font-weight: 300;
@@ -62,6 +63,7 @@
           img{
               width: 30px;
               height: 30px;
+              margin-right: 15px;
           }
         }        
     }
@@ -204,6 +206,7 @@
         font-size: 20px;
         color: $brown-grey;
         font-weight: bold;
+        transform: translateY(-10px);
         &::first-letter{
             font-weight: normal;
         }
