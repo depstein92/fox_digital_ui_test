@@ -15,7 +15,6 @@
 
     @mixin mobile-base-style{
         max-width: none;
-        margin: 0 auto;
         border-radius: 0;
         border: none;
         box-shadow: none;
@@ -29,21 +28,27 @@
     }
     
     .profile{
-        width: 110%;
+        width: 100%;
         @include mobile-base-style;
     }
     
     .price{
-        width: 100%;
+        width: 80%;
         padding-left: 5px;
         padding-top: 0;
         @include mobile-base-style;
+        margin: 30px auto;
+
         & > div{
-            margin-bottom: 5px;
+            margin-bottom: 25px;
             * {
                 padding-left: 0;
                 text-align: center;
             }
+        }
+
+        &__button-container{
+            width: 100%;
         }
     }
       
@@ -115,8 +120,6 @@
     width: 70%;
     max-width: none;
 
-    
-
     &__small-business-selection-container{
         width: 100%;
     }
@@ -163,7 +166,7 @@
             flex-direction: row;
         }
         &__small-business-selection-container{
-            width: 650px;
+            width: 630px;
         }
     }
 }

@@ -10,8 +10,9 @@ function App() {
     <div className="App">
       <div className="layout-wrapper">
       <ProfileComponent />
-        <PriceComponent />
-        <CheckoutComponent />
+      <PriceComponent />
+        {// <CheckoutComponent />
+        }
       </div>
     </div>
   );
